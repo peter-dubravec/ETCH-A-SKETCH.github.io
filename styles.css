@@ -1,0 +1,34 @@
+body {
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divGrid {
+  display: flex;
+}
+
+.insideDiv {
+  flex-shrink: 0;
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+  border: 2px solid white;
+}
+
+@keyframes animation-change-to-red {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: red;
+  }
+}
+
+.changeToRed {
+  animation-name: animation-change-to-red;
+  animation-duration: 0.5s;
+}
